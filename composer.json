@@ -1,0 +1,14 @@
+{
+  "name": "sursum-git/log-adianti",
+  "description": "Facilitador de log para debug de codigo do adianti framework",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "SeuNamespace\\": "log_adianti"
+    }
+  },
+  "require": {
+    "php": ">=8.0"
+  }
+}
