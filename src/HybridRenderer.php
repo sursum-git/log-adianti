@@ -1,4 +1,6 @@
 <?php
+
+namespace Genesis\LogHelpers;
 /**
  * Classe HybridRenderer
  * ---------------------
@@ -201,8 +203,8 @@ class HybridRenderer
             if ($converted !== false) return $converted;
             return mb_convert_encoding($s, 'UTF-8', 'auto');
         }
-        if (class_exists('Normalizer')) {
-            $n = Normalizer::normalize($s, Normalizer::FORM_C);
+        if (class_exists('\\Normalizer')) {
+            $n = \Normalizer::normalize($s, \Normalizer::FORM_C);
             if ($n !== false) return $n;
         }
         return $s;

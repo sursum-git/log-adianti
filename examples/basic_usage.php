@@ -1,6 +1,8 @@
 <?php
 require __DIR__ . '/../src/HybridRenderer.php';
 
+use Genesis\LogHelpers\HybridRenderer;
+
 $pedido = [
     'record' => [
         'id' => 1024,

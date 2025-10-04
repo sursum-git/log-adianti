@@ -1,6 +1,8 @@
 <?php
 require __DIR__ . '/../src/HybridRenderer.php';
 
+use Genesis\LogHelpers\HybridRenderer;
+
 function encryptBase64Payload(string $base64Payload, string $secret): string
 {
     $method = 'AES-256-CBC';

@@ -1,6 +1,6 @@
 # HybridRenderer
 
-A classe `HybridRenderer` transforma o formato de log utilizado pelo Adianti Framework em HTML amigável, combinando a apresentação em tabela para dados planos e uma visualização hierárquica em árvore para estruturas mais complexas.
+A classe `Genesis\LogHelpers\HybridRenderer` transforma o formato de log utilizado pelo Adianti Framework em HTML amigável, combinando a apresentação em tabela para dados planos e uma visualização hierárquica em árvore para estruturas mais complexas.
 
 ## Principais recursos
 
@@ -20,6 +20,8 @@ Copie o arquivo [`src/HybridRenderer.php`](../src/HybridRenderer.php) para o seu
 
 ```php
 require 'src/HybridRenderer.php';
+
+use Genesis\LogHelpers\HybridRenderer;
 
 $renderer = new HybridRenderer(addMetaCharset: true);
 $html = $renderer->render($dadosDoLog);

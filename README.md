@@ -4,7 +4,7 @@ Log para facilitar o debug no formato de dados utilizado pelo Adianti Framework.
 
 ## HybridRenderer
 
-Este repositório inclui a classe [`HybridRenderer`](src/HybridRenderer.php), responsável por converter o conteúdo de logs do Adianti em HTML com duas visualizações complementares:
+Este repositório inclui a classe [`Genesis\\LogHelpers\\HybridRenderer`](src/HybridRenderer.php), responsável por converter o conteúdo de logs do Adianti em HTML com duas visualizações complementares:
 
 - **Tabela plana** para coleções homogêneas (dados planos provenientes de `rawobj`).
 - **Árvore hierárquica** como fallback para estruturas complexas.
